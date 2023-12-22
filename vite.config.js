@@ -4,10 +4,10 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	css: {
 		preprocessorOptions: {
-			sass: {
+			scss: {
 				additionalData: `
-					@import '$lib/sass/variables'
-					@import '$lib/sass/mixins'
+					@use '$lib/scss/variables'
+					@use '$lib/scss/mixins'
 				`
 			}
 		}

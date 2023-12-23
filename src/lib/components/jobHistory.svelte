@@ -18,7 +18,7 @@
         display: flex;
         flex-flow: column;
         align-items: center;
-        width: 45%;
+        width: 48%;
     }
 
     .job { 

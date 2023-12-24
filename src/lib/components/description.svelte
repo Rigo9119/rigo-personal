@@ -30,11 +30,14 @@
 		display: flex;
 		flex-flow: column;
 		align-items: center;
+		align-self: flex-start;
 		justify-content: space-between;
 		margin: 5px;
 		padding: 20px;
+		position: fixed;
 		border: 1px solid transparent;
 		border-radius: 10px;
+		background-color: white;
 		box-shadow: -2px 1px 5px 1px rgba(0, 0, 0, 0.34);
 		width: 45%;
 

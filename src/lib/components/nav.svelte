@@ -26,7 +26,7 @@
 		padding-top: 16px;
 		padding-left: inherit;
 		padding-right: 20px;
-		s &__ul {
+		&__ul {
 			display: flex;
 			list-style: none;
 			align-items: center;

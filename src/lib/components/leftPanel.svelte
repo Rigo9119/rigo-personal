@@ -2,6 +2,7 @@
 	import { jobsData } from '../data/jobHistory';
 	import JobHistory from './jobHistory.svelte';
 	import Nav from './nav.svelte';
+	import Skills from './skills.svelte';
 	import { setContext } from 'svelte';
 	import { writable } from 'svelte/store';
 
@@ -13,7 +14,8 @@
 
 <div class="leftPanel">
 	<Nav />
-	<JobHistory id="job-history" jobs={jobsData} />
+	<JobHistory id="job-history" jobs={jobsData} data-option="job-history" />
+	<Skills />
 </div>
 
 <style lang="scss">

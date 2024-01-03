@@ -2,6 +2,7 @@
 	import { getContext } from 'svelte';
 
 	const options = getContext('options');
+	console.log(options);
 </script>
 
 <nav class="nav">
@@ -26,6 +27,7 @@
 		padding-top: 16px;
 		padding-left: inherit;
 		padding-right: 20px;
+
 		&__ul {
 			display: flex;
 			list-style: none;
@@ -36,6 +38,7 @@
 
 			&__li {
 				padding: 12px 0;
+
 				&__a {
 					padding: 8px 12px;
 					text-decoration: none;

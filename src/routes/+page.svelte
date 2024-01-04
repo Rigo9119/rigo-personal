@@ -1,11 +1,11 @@
 <script context="module">
-	import Description from '../lib/components/description.svelte';
 	import '../app.css';
 	import LeftPanel from '../lib/components/leftPanel.svelte';
+	import RightPanel from '../lib/components/rightPanel.svelte';
 </script>
 
 <div class="content">
-	<Description />
+	<RightPanel />
 	<LeftPanel />
 </div>
 
@@ -15,6 +15,7 @@
 		flex-flow: row nowrap;
 		align-items: flex-start;
 		justify-content: space-between;
+		gap: 50px;
 		margin: 20px;
 	}
 </style>

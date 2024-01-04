@@ -19,22 +19,17 @@
 <style lang="scss">
 	.nav {
 		display: flex;
-		position: fixed;
-		background-color: white;
-		top: 0;
-		left: 51%;
-		width: 48%;
-		padding-top: 16px;
-		padding-left: inherit;
-		padding-right: 20px;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: space-between;
 
 		&__ul {
 			display: flex;
 			list-style: none;
 			align-items: center;
 			justify-content: space-between;
-			width: 30%;
 			flex-flow: row nowrap;
+			width: 100%;
 
 			&__li {
 				padding: 12px 0;

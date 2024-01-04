@@ -9,11 +9,23 @@
 
 <style lang="scss">
 	.skills {
-		background-color: green;
+		border-radius: 50%;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: space-between;
+		margin: 5px;
+		padding: 15px;
+		border: 1px solid transparent;
+		border-radius: 10px;
+		box-shadow: -2px 1px 5px 1px rgba(0, 0, 0, 0.34);
+		width: 100%;
+
 		&__list {
-			background-color: blue;
+			list-style: none;
+
 			&__item {
-				color: red;
+				font-style: italic;
 			}
 		}
 	}

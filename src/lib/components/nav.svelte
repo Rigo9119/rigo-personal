@@ -13,6 +13,9 @@
 		<li class="nav__ul__li">
 			<a class="nav__ul__li__a skills" on:click={$options[1]} href="#skills">Skills</a>
 		</li>
+		<li class="nav__ul__li">
+			<a class="nav__ul__li__a portafolio" on:click={$options[2]} href="#portafolio">Portafolio</a>
+		</li>
 	</ul>
 </nav>
 
@@ -22,6 +25,7 @@
 		flex-flow: row nowrap;
 		align-items: center;
 		justify-content: space-between;
+		margin-bottom: 20px;
 
 		&__ul {
 			display: flex;
@@ -30,6 +34,7 @@
 			justify-content: space-between;
 			flex-flow: row nowrap;
 			width: 100%;
+			gap: 20px;
 
 			&__li {
 				padding: 12px 0;
@@ -51,5 +56,10 @@
 	.skills {
 		color: crimson;
 		border: 1px solid crimson;
+	}
+
+	.portafolio {
+		color: '#16D45';
+		border: 1px solid teal;
 	}
 </style>

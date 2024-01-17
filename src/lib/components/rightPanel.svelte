@@ -1,9 +1,11 @@
 <script>
 	import Description from './description.svelte';
+	import SocialMedia from './socialMedia.svelte';
 </script>
 
 <div class="rightPanel">
 	<Description />
+	<SocialMedia />
 </div>
 
 <style lang="scss">

@@ -14,15 +14,6 @@
 		natus labore vel explicabo suscipit nihil, corrupti laboriosam tenetur cupiditate ipsam nulla
 		rerum aut. Possimus, rerum commodi.
 	</p>
-	<h5>You can find me in:</h5>
-	<ul class="description__list">
-		<li>
-			<a href="https://github.com/Rigo9119" target="_blank">github</a>
-		</li>
-		<li>
-			<a href="https://www.linkedin.com/in/rigo-rosero97/" target="_blank">linkedin</a>
-		</li>
-	</ul>
 </section>
 
 <style lang="scss">
@@ -65,19 +56,6 @@
 
 		&__paragraph {
 			margin-bottom: 15px;
-		}
-
-		h5 {
-			margin-bottom: 10px;
-		}
-
-		&__list {
-			display: flex;
-			flex-flow: row;
-			align-items: center;
-			justify-content: space-between;
-			list-style: none;
-			width: 80%;
 		}
 	}
 </style>

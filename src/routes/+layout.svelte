@@ -1,11 +1,11 @@
 <script>
 	import Nav from '../lib/components/nav.svelte';
-	import RightPanel from '../lib/components/rightPanel.svelte';
+	import LeftPanel from '../lib/components/leftPanel.svelte';
 </script>
 
 <div class="container">
 	<div class="container__left">
-		<RightPanel />
+		<LeftPanel />
 	</div>
 	<div class="container__right">
 		<Nav />
@@ -19,6 +19,7 @@
 		flex-flow: row nowrap;
 		align-items: center;
 		justify-content: space-around;
+		min-height: 100vh;
 		width: 100%;
 
 		&__right {
@@ -26,6 +27,7 @@
 			flex-flow: column nowrap;
 			align-items: center;
 			justify-content: space-around;
+			padding-top: 25px;
 			width: 45%;
 		}
 
@@ -34,6 +36,7 @@
 			flex-flow: column nowrap;
 			align-items: center;
 			justify-content: space-around;
+			padding-top: 25px;
 			width: 45%;
 		}
 	}

@@ -24,6 +24,7 @@
 		display: flex;
 		flex-flow: row nowrap;
 		align-items: center;
+		align-self: flex-start;
 		justify-content: space-between;
 		margin-bottom: 20px;
 
@@ -59,7 +60,7 @@
 	}
 
 	.portafolio {
-		color: '#16D45';
-		border: 1px solid teal;
+		color: #23615e;
+		border: 1px solid #23615e;
 	}
 </style>

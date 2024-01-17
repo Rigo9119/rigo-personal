@@ -1,21 +1,7 @@
 <script context="module">
 	import '../app.css';
-	import LeftPanel from '../lib/components/leftPanel.svelte';
-	import RightPanel from '../lib/components/rightPanel.svelte';
+	import { jobsData } from '../lib/data/jobHistory';
+	import JobHistory from '../lib/components/jobHistory.svelte';
 </script>
 
-<div class="content">
-	<RightPanel />
-	<LeftPanel />
-</div>
-
-<style lang="scss">
-	.content {
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: flex-start;
-		justify-content: space-between;
-		gap: 50px;
-		margin: 20px;
-	}
-</style>
+<JobHistory id="job-history" jobs={jobsData} data-option="job-history" />

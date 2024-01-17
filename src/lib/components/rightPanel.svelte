@@ -14,6 +14,7 @@
 		flex-flow: column nowrap;
 		align-items: center;
 		justify-content: center;
-		width: 47%;
+		gap: 20px;
+		width: 100%;
 	}
 </style>

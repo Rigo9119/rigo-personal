@@ -31,7 +31,7 @@
 			align-items: center;
 			justify-content: space-between;
 			list-style: none;
-			width: 80%;
+			width: 100%;
 		}
 	}
 </style>

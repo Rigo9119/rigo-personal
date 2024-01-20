@@ -25,7 +25,7 @@
 		&__right {
 			display: flex;
 			flex-flow: column nowrap;
-			align-items: center;
+			align-items: flex-start;
 			justify-content: space-around;
 			padding-top: 25px;
 			width: 45%;
@@ -34,10 +34,11 @@
 		&__left {
 			display: flex;
 			flex-flow: column nowrap;
-			align-items: center;
-			justify-content: space-around;
+			align-items: flex-start;
+			justify-content: flex-start;
 			padding-top: 25px;
 			width: 45%;
+			height: 100vh;
 		}
 	}
 </style>

@@ -15,6 +15,8 @@
 		display: flex;
 		flex-flow: column;
 		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
 		width: 100%;
 	}
 </style>

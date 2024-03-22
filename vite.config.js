@@ -12,5 +12,10 @@ export default defineConfig({
 			}
 		}
 	},
-	plugins: [sveltekit()]
+	plugins: [sveltekit()],
+	server: {
+		watch: {
+			useFsEvents: false
+		}
+	}
 });

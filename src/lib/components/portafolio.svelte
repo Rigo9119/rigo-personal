@@ -2,14 +2,14 @@
 	<div>
 		<p>
 			Here you can check my portafolio, please have in mind that most of my work was done in private
-			comapnies and i cant display here the work done for those companies as it is procted by
+			comnpanies and I cant display here the work done for those companies as it is procted under
 			privacy and ownership contracts:
 		</p>
 		<br />
 		<p>So here is some of my work as a freelancer:</p>
 	</div>
 	<ul>
-		<li>Ressonar</li>
+		<li><a href="https://ressonarfilms.com/" target="_blank">Ressonar</a></li>
 	</ul>
 </section>
 

@@ -1,5 +1,5 @@
 <script>
-    export let language
+   // export let language;
 </script>
 
 <div class="language-selector" >
@@ -28,3 +28,4 @@
         }
     }
 </style>
+    

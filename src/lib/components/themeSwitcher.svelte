@@ -4,7 +4,7 @@
 
 
 <button class="theme-btn" on:click={toggleTheme}>
-    {$theme ? "light" : "dark"}
+    {$theme ? "Light" : "Dark"}
 </button>
 
 <style lang="scss">

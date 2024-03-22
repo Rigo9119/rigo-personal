@@ -20,6 +20,36 @@
 	@import '../lib/scss/variables.scss';
 	@import '../lib/scss/mixins.scss';
 
+	:global {
+		:root {
+			font-family: 'Lato', sans-serif;
+			font-size: 14px;
+		}
+		* {
+			box-sizing: border-box;
+    		margin: 0;
+    		padding: 0;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		button {
+			cursor: pointer;
+		}
+
+		.light {
+			color: #172121;
+			background-color: white;
+		}
+
+		.dark {
+			color: #F6F0ED;
+			background-color: #172121;
+		}
+	}
+
 	.container {
 		display: flex;
 		flex-flow: row nowrap;
@@ -47,15 +77,5 @@
 			padding-top: 25px;
 			width: 45%;
 		}
-	}
-
-	.light {
-		color: #172121;
-		background-color: white;
-	}
-
-	.dark {
-		color: #F6F0ED;
-		background-color: #172121;
 	}
 </style>

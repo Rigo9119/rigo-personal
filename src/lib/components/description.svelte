@@ -8,11 +8,10 @@
 			/>
 		</picture>
 		<h1 class="description__top__name">Rigo Armando Rosero Castillo</h1>
+		<h3 class="description__top__role">Frontend Dev | Software engineer</h3>
 	</div>
 	<p class="description__paragraph">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae assumenda hic fugiat veniam
-		natus labore vel explicabo suscipit nihil, corrupti laboriosam tenetur cupiditate ipsam nulla
-		rerum aut. Possimus, rerum commodi.
+		I am a Front-End Developer with nearly five years of industry experience, I possess a wealth of knowledge in HTML, CSS, SCSS, Javascript, Typescript, and React Js. My expertise in these technologies has enabled me to create highly functional and visually appealing websites that meet the needs of clients across various industries. My experience working with Agile methodologies has allowed me to effectively collaborate with cross-functional teams and deliver exceptional results.
 	</p>
 </section>
 
@@ -47,12 +46,19 @@
 			}
 
 			&__name {
-				margin: 15px 0;
+				padding: 24px 0;
+			}
+
+			&__role {
+				padding: 4px 0 20px 0;
 			}
 		}
 
 		&__paragraph {
-			margin-bottom: 15px;
+			padding: 0 10px 5px 10px;
+			line-height: 20px;
+			letter-spacing: 0.8px;
+			text-align: justify;
 		}
 	}
 </style>

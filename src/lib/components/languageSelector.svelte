@@ -3,7 +3,7 @@
 </script>
 
 <div class="language-selector" >
-    <button class="language-selector__button" on:click={() => alert($language)}>ES</button>
+    <button class="language-selector__button">ES</button>
     <button class="language-selector__button">EN</button>
     <button class="language-selector__button">KR</button>
 </div>

@@ -17,7 +17,7 @@
         theme={theme}
         toggleTheme={toggleTheme}
     />
-</div> 
+</div>
 
 <style lang="scss">
     .page-config {

@@ -39,12 +39,6 @@
 			justify-content: space-evenly;
 			list-style: none;
 			width: 100%;
-
-			&__item {
-				&__a {
-					color: crimson;
-				}
-			}
 		}
 	}
 </style>

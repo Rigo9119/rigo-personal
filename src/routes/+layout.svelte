@@ -39,6 +39,13 @@
 			cursor: pointer;
 		}
 
+		a  {
+			text-decoration: none;
+			&:visited {
+				color: crimson;
+			}
+		}
+
 		.light {
 			color: #172121;
 			background-color: white;

@@ -1,10 +1,11 @@
-$theme-map-light: (
-    "theme-light-text":  #172121,
-    "theme-light-bg":white,
-);
-
-$theme-map-dark: (
-    "theme-dark-text": #F6F0ED,
-    "theme-light-bg": #172121,
-);
+// theme vars
+$theme-light-text: #172121;
+$theme-light-bg: #fff;
+$theme-dark-text: #F6F0ED;
+$theme-dark-bg: #172121;
+// breakpoints vars
+$sm: 568px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 

@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @mixin shadow-box {
 	padding: 20px;
 	border: 1px solid transparent;
@@ -6,8 +8,18 @@
 	width: 100%;
 }
 
-@mixin spread-map($map: ()) {
+@mixin theme($map: ()) {
     @each $key, $value in $map {
         #{$key}: $value;
+    }
+}
+
+@mixin media($breakpoint) {
+    @each $breakpoints, $size in $media {
+        @if $breakpoint==$breakpoints {
+            @media screen and (min-width: $size) {
+                @content;
+            }
+        }
     }
 }

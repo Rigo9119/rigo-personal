@@ -19,12 +19,14 @@
 <style lang="scss">
 	@import '../lib/scss/variables.scss';
 	@import '../lib/scss/mixins.scss';
+	@import '../lib/scss/maps.scss';
 
 	:global {
 		:root {
 			font-family: 'Lato', sans-serif;
 			font-size: 14px;
 		}
+
 		* {
 			box-sizing: border-box;
     		margin: 0;
@@ -59,20 +61,30 @@
 
 	.container {
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: column nowrap;
 		align-items: center;
 		justify-content: space-around;
 		min-height: 100vh;
 		width: 100%;
+
+
+		@include media('md') {
+			flex-flow: row nowrap;
+		}
 
 		&__left {
 			display: flex;
 			flex-flow: column nowrap;
 			align-items: flex-start;
 			justify-content: flex-start;
+			padding: 15px;
 			padding-top: 25px;
-			width: 45%;
-			height: 100vh;
+			width: 100%;
+
+			@include media('md') {
+				align-self: flex-start;
+				width: 45%;
+			}
 		}
 
 		&__right {
@@ -81,8 +93,14 @@
 			align-self: flex-start;
 			align-items: flex-start;
 			justify-content: space-around;
+			padding: 15px;
 			padding-top: 25px;
-			width: 45%;
+			width: 100%;
+
+			@include media('md') {
+				padding: 15px;
+				width: 45%;
+			}
 		}
 	}
 </style>

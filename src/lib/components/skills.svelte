@@ -1,17 +1,18 @@
 <script>
-	import { skills, learningSkills } from "../data/skills";
+	import { skills, learningSkills } from '../data/skills';
+	import { _ } from 'svelte-i18n';
 </script>
 
 <section class="skills">
 	<ul class="skills__list">
-		{#each skills as skill }
+		{#each skills as skill}
 			<li class="skills__list__item">{skill}</li>
 		{/each}
 	</ul>
 
-	<h4>Currently I am learning: </h4>
-	<ul class="skills__learning" >
-		{#each learningSkills as learningSkill }
+	<h4>{$_('skills-title')}</h4>
+	<ul class="skills__learning">
+		{#each learningSkills as learningSkill}
 			<li class="skills__learning__item">{learningSkill}</li>
 		{/each}
 	</ul>
@@ -26,7 +27,7 @@
 		justify-content: space-between;
 		gap: 25px;
 		width: 100%;
-		
+
 		&__list {
 			@include shadow-box;
 			width: 100%;

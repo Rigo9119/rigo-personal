@@ -52,8 +52,9 @@
 
 <style lang="scss">
 	.language-selector {
-		margin-left: 8px;
 		border: none;
 		cursor: pointer;
+		background: none;
+		padding: 0 8px;
 	}
 </style>

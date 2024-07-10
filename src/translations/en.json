@@ -1,5 +1,15 @@
 {
 	"select-label": "Select a language:",
 	"bio": "I am a Front-End Developer with nearly seven years of industry experience, I possess a wealth of knowledge in HTML, CSS, SCSS, Javascript, Typescript, and React Js. My expertise in these technologies has enabled me to create highly functional and visually appealing websites that meet the needs of clients across various industries. My experience working with Agile methodologies has allowed me to effectively collaborate with cross-functional teams and deliver exceptional results.",
-	"social-title": "You can find me at:"
+	"social-title": "You can find me at:",
+	"skills-title": "Currently I am learning:",
+	"nav": {
+		"job-history": "Job History",
+		"skills": "Skills",
+		"portafolio": "Portafolio"
+	},
+	"portafolio": {
+		"paragraph": "Here you can check my portafolio, please have in mind that most of my work was done in private comnpanies and I cant display here the work done for those companies as it is procted under privacy and ownership contracts.",
+		"list-title": "So here is some of my work as a freelancer:"
+	}
 }

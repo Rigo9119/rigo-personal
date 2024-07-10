@@ -1,12 +1,14 @@
+<script>
+	import { _ } from 'svelte-i18n';
+</script>
+
 <section class="portafolio">
 	<div>
 		<p>
-			Here you can check my portafolio, please have in mind that most of my work was done in private
-			comnpanies and I cant display here the work done for those companies as it is procted under
-			privacy and ownership contracts:
+			{$_('portafolio.paragraph')}
 		</p>
 		<br />
-		<p>So here is some of my work as a freelancer:</p>
+		<h5>{$_('portafolio.list-title')}</h5>
 	</div>
 	<ul>
 		<li><a href="https://ressonarfilms.com/" target="_blank">Ressonar</a></li>
@@ -26,5 +28,10 @@
 		border-radius: 10px;
 		box-shadow: -2px 1px 5px 1px rgba(0, 0, 0, 0.34);
 		width: 100%;
+
+		& ul {
+			margin-top: 12px;
+			list-style: none;
+		}
 	}
 </style>

@@ -1,13 +1,17 @@
+<script>
+	import { _ } from 'svelte-i18n';
+</script>
+
 <nav class="nav">
 	<ul class="nav__ul">
 		<li class="nav__ul__li">
-			<a class="nav__ul__li__a jobs" href="/">Job history</a>
+			<a class="nav__ul__li__a jobs" href="/">{$_('nav.job-history')}</a>
 		</li>
 		<li class="nav__ul__li">
-			<a class="nav__ul__li__a skills" href="/skills">Skills</a>
+			<a class="nav__ul__li__a skills" href="/skills">{$_('nav.skills')}</a>
 		</li>
 		<li class="nav__ul__li">
-			<a class="nav__ul__li__a portafolio" href="/portafolio">Portafolio</a>
+			<a class="nav__ul__li__a portafolio" href="/portafolio">{$_('nav.portafolio')}</a>
 		</li>
 	</ul>
 </nav>

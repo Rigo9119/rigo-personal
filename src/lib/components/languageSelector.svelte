@@ -1,31 +1,59 @@
 <script>
-   // export let language;
+	import { locale, locales } from 'svelte-i18n';
+	import { _ } from 'svelte-i18n';
+
+	const changeLanguage = (event) => {
+		locale.set(event.target.value);
+	};
+
+	let currentLocale;
+
+	let languages = [
+		{
+			locale: 'en-US',
+			label: 'English'
+		},
+		{
+			locale: 'es',
+			label: 'Español'
+		},
+		{
+			locale: 'kr',
+			label: '한국어'
+		}
+	];
+
+	locales.subscribe((value) => {
+		let availableLocales = languages.find((locale) => locale.locale === value);
+		return availableLocales;
+	});
+
+	locale.subscribe((value) => {
+		currentLocale = value;
+	});
 </script>
 
-<div class="language-selector" >
-    <button class="language-selector__button">ES</button>
-    <button class="language-selector__button">EN</button>
-    <button class="language-selector__button">KR</button>
+<div>
+	<label for="select-languages">
+		{$_('select-label')}
+	</label>
+	<select
+		id="select-languages"
+		name="select-languages"
+		class="language-selector"
+		on:change={changeLanguage}
+		bind:value={currentLocale}
+	>
+		{#each languages as language}
+			<option value={language.locale}>{language.label}</option>
+		{/each}
+	</select>
 </div>
 
 <style lang="scss">
-    .language-selector {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: space-between;
-        width: 7vw;
-
-        &__button {
-            border: none;
-            background: none;
-
-            &:hover {
-                text-decoration: underline;
-                text-underline-offset: 3px;
-                color: cornflowerblue;
-            }
-        }
-    }
+	.language-selector {
+		margin-left: 8px;
+		border: none;
+		cursor: pointer;
+	}
 </style>
-    

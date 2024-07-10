@@ -1,21 +1,22 @@
+<script>
+	import { _ } from 'svelte-i18n';
+</script>
+
 <div class="social">
-	<h4>You can find me in: </h4>
+	<h4>{$_('social-title')}</h4>
 
 	<ul class="social__list">
 		<li class="social__list_item">
-			<a
-				class="social__list__item__a"
-				href="https://github.com/Rigo9119" 
-				target="_blank"
-			>
+			<a class="social__list__item__a" href="https://github.com/Rigo9119" target="_blank">
 				Github
 			</a>
 		</li>
 		<li class="social__list_item">
 			<a
 				class="social__list__item__a"
-				href="https://www.linkedin.com/in/rigo-rosero97/" 
-				target="_blank">
+				href="https://www.linkedin.com/in/rigo-rosero97/"
+				target="_blank"
+			>
 				Linkedin
 			</a>
 		</li>

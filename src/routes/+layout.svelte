@@ -2,19 +2,36 @@
 	import Nav from '../lib/components/nav.svelte';
 	import LeftPanel from '../lib/components/leftPanel.svelte';
 	import PageConfig from '../lib/components/pageConfig.svelte';
+	import '$lib/i18n';
+	import { isLoading, locale, waitLocale } from 'svelte-i18n';
 	import { theme } from '../stores/theme';
+	import { browser } from '$app/environment';
+
+	export const load = async () => {
+		if (browser) {
+			locale.set(window.navigator.language);
+		}
+
+		await waitLocale();
+	};
 </script>
 
-<div class="container" class:light={!$theme} class:dark={$theme}>
-	<div class="container__left">
+{#if $isLoading}
+	...
+{:else}
+	<div class="container" class:light={!$theme} class:dark={$theme}>
+		<div class="container__left">
+			<LeftPanel />
+		</div>
+		<div class="container__right">
+			<Nav />
+			<slot />
+		</div>
+	</div>
+	<footer class:light={!$theme} class:dark={$theme}>
 		<PageConfig />
-		<LeftPanel />
-	</div>
-	<div class="container__right">
-		<Nav />
-		<slot />
-	</div>
-</div>
+	</footer>
+{/if}
 
 <style lang="scss">
 	@import '../lib/scss/variables.scss';
@@ -29,8 +46,8 @@
 
 		* {
 			box-sizing: border-box;
-    		margin: 0;
-    		padding: 0;
+			margin: 0;
+			padding: 0;
 		}
 
 		body {
@@ -41,7 +58,7 @@
 			cursor: pointer;
 		}
 
-		a  {
+		a {
 			text-decoration: none;
 			&:visited {
 				color: crimson;
@@ -54,7 +71,7 @@
 		}
 
 		.dark {
-			color: #F6F0ED;
+			color: #f6f0ed;
 			background-color: #172121;
 		}
 	}
@@ -66,7 +83,6 @@
 		justify-content: space-around;
 		min-height: 100vh;
 		width: 100%;
-
 
 		@include media('md') {
 			flex-flow: row nowrap;

@@ -1,3 +1,7 @@
+<script>
+	import { _ } from 'svelte-i18n';
+</script>
+
 <section class="description">
 	<div class="description__top">
 		<picture class="description__top__picture">
@@ -8,10 +12,10 @@
 			/>
 		</picture>
 		<h1 class="description__top__name">Rigo Armando Rosero Castillo</h1>
-		<h3 class="description__top__role">Frontend Dev | Software engineer</h3>
+		<h3 class="description__top__role">Frontend Dev | Software Engineer</h3>
 	</div>
 	<p class="description__paragraph">
-		I am a Front-End Developer with nearly five years of industry experience, I possess a wealth of knowledge in HTML, CSS, SCSS, Javascript, Typescript, and React Js. My expertise in these technologies has enabled me to create highly functional and visually appealing websites that meet the needs of clients across various industries. My experience working with Agile methodologies has allowed me to effectively collaborate with cross-functional teams and deliver exceptional results.
+		{$_('bio')}
 	</p>
 </section>
 

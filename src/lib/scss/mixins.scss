@@ -8,18 +8,26 @@
 	width: 100%;
 }
 
+@mixin shodow-box-light {
+	padding: 20px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	box-shadow: -2px 1px 5px 1px rgba(103, 103, 103 / 65%);
+	width: 100%;
+}
+
 @mixin theme($map: ()) {
-    @each $key, $value in $map {
-        #{$key}: $value;
-    }
+	@each $key, $value in $map {
+		#{$key}: $value;
+	}
 }
 
 @mixin media($breakpoint) {
-    @each $breakpoints, $size in $media {
-        @if $breakpoint==$breakpoints {
-            @media screen and (min-width: $size) {
-                @content;
-            }
-        }
-    }
+	@each $breakpoints, $size in $media {
+		@if $breakpoint==$breakpoints {
+			@media screen and (min-width: $size) {
+				@content;
+			}
+		}
+	}
 }
